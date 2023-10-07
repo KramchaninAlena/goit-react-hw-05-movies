@@ -1,0 +1,33 @@
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 50px;
+    }
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+}
+
+.item {
+    width: 200px;
+    background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 5px;
+  
+}
+
+.link {
+    text-decoration: none;
+}
+
+.title {
+    margin: 0;
+    text-align: center;
+    color: black;
+}
