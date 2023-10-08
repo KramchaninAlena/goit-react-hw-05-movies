@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import css from './Cast.module.css'
 
-export const Cast = () => {
+ const Cast = () => {
     const {movieId} = useParams()
     const [creditsMovie, setCreditsMovie] = useState([])
     const defultImages = 'https://fakeimg.pl/200x300?text=NO+IMAGE'
@@ -21,8 +21,6 @@ export const Cast = () => {
     fetchCreditsMovies();
 }, [movieId]);
 
-// const {character, name, profile_path} = creditsMovie;
-
   return (
     
     <div className={css.container}>
@@ -38,3 +36,4 @@ export const Cast = () => {
     </div>
   )
 }
+export default Cast;

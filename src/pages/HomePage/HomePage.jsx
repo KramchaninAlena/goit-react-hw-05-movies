@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import css from './HomePage.module.css'
 const defultImages = 'https://fakeimg.pl/200x300?text=NO+IMAGE'
 
-export const HomePage = () => {
+ const HomePage = () => {
 const [listFilm, setListFilm] = useState([])
     useEffect(() => {
         const fetchTrendingMovie = async () => {
@@ -46,3 +46,4 @@ const [listFilm, setListFilm] = useState([])
     
   )
 }
+export default HomePage;
